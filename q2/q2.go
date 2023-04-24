@@ -22,10 +22,11 @@ func ProblemsSolved(answers [][3]bool) int {
 			if answers[l][c] == true {
 				sum++
 			}
-			if sum == 2 {
-				total++
 
-			}
+		}
+		if sum >= 2 {
+			total++
+
 		}
 
 	}

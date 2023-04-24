@@ -22,7 +22,7 @@ func ProcessString(s string) string {
 	for i := 0; i < len(s); i++ {
 		if strings.Contains("AEIOUaeiou", string(s[i])) {
 
-			s = strings.ReplaceAll(s, "a", "")
+			s := strings.ReplaceAll(s, "a", "")
 			s = strings.ReplaceAll(s, "e", "")
 			s = strings.ReplaceAll(s, "i", "")
 			s = strings.ReplaceAll(s, "o", "")
@@ -41,3 +41,4 @@ func ProcessString(s string) string {
 	}
 	return result
 }
+
